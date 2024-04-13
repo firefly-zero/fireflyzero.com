@@ -3,7 +3,7 @@
 version: '3'
 
 tasks:
-  default:
+  build:
     sources:
       - templates/*.j2
       - data.yaml
@@ -13,3 +13,6 @@ tasks:
       - mkdir -p public
       - python3 generate.py
       - cp logo-placeholder.svg public/
+
+  default:
+    - task: build
