@@ -3,7 +3,14 @@
 version: '3'
 
 tasks:
+  install-deps:
+    sources:
+      - requirements.txt
+    cmds:
+      - python3 -m pip install -r requirements.txt
   build:
+    deps:
+      - install-deps
     sources:
       - templates/*.j2
       - data.yaml

@@ -5,14 +5,7 @@ import yaml
 from jinja2 import Environment, FileSystemLoader
 
 
-env = Environment(
-    loader=FileSystemLoader('templates'),
-    extensions=[
-        'jinja2.ext.loopcontrols',
-        'jinja2_markdown.MarkdownExtension',
-    ],
-)
-
+env = Environment(loader=FileSystemLoader('templates'))
 public_dir = Path('public')
 public_dir.mkdir(exist_ok=True)
 template = env.get_template('index.html.j2')
