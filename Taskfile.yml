@@ -1,0 +1,15 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    sources:
+      - templates/*.j2
+      - data.yaml
+    generates:
+      - public
+    cmds:
+      - mkdir -p public
+      - python3 generate.py
+      - cp logo-placeholder.svg public/

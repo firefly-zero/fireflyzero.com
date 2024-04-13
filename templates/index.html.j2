@@ -1,0 +1,76 @@
+{% extends "base.html.j2" %}
+{% block body %}
+  <div class="text-center" style="margin-top: 10px">
+    <img src="logo-placeholder.svg"/>
+  </div>
+  <h1 class="text-center">Firefly Zero</h1>
+  <p class="lead text-center">
+    A modern handheld game console with effortless multiplayer.
+    It's fun to play, alone or with friends, and easy to program.
+  </p>
+
+  <hr/>
+  <div class="row">
+    <div class="col">
+      <h2>For players</h2>
+      <ul>
+        {% for feature in features['for_players'] %}
+          <li>{{ feature }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col">
+      <h2>For developers</h2>
+      <ul>
+        {% for feature in features['for_devs'] %}
+          <li>{{ feature }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center">Team</h2>
+      <p class="text-center">
+        We are just geeks making gamedev fun and easy.
+      </p>
+    </div>
+    <div class="col-6">
+      <h2 class="text-center">Gram</h2>
+      <p class="text-center">Software</p>
+      <p class="text-center">
+        <a href="https://github.com/orsinium" target="_blank" type="button" class="btn btn-light">
+          github
+        </a>
+        <a href="https://fosstodon.org/@orsinium" target="_blank" type="button" class="btn btn-light">
+          mastodon
+        </a>
+      </p>
+    </div>
+    <div class="col-6">
+      <h2 class="text-center">Alex</h2>
+      <p class="text-center">Hardware</p>
+      <p class="text-center">
+        <a href="https://github.com/kopchik/" target="_blank" type="button" class="btn btn-light">
+          github
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <hr/>
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center">Roadmap</h2>
+    </div>
+    <div class="col-12">
+      <p class="text-center">
+        We're getting things ready for alpha testing of the SDKs and development tools.
+        Stay tuned!
+      </p>
+    </div>
+  </div>
+
+{% endblock %}

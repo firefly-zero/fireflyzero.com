@@ -1,0 +1,21 @@
+features:
+  for_players:
+    - Lots of never-before-seen unique games.
+    - The easiest same-room multiplayer.
+    - Unique touchpad controls inspired by Steam Controller.
+    - Works and will always work without internet.
+    - >
+      You own it. No cloud subscription, no online-only games or services, no DRM.
+      The games you buy today will stay yours forever.
+    - Safe, thanks to cryptography.
+  for_devs:
+    - >
+      Programmable on any language supporting WebAssembly:
+      Go, Rust, Zig, TypeScript, Python, Lua, and many more.
+    - Don't know programming yet? Make your first game in 5 minutes with with Blockly!
+    - The easiest way to make multiplayer games.
+    - Desktop emulator, CLI, and lots of other development tools.
+    - Friendly and safe API without direct memory manipulation.
+    - Open source software and hardware.
+    - Touchpad, accelerometer, multi-color display.
+    - First-class support for scores, leaderboards, and achievements.
