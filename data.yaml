@@ -12,7 +12,7 @@ features:
     - >
       Programmable on any language supporting WebAssembly:
       Go, Rust, Zig, TypeScript, Python, Lua, and many more.
-    - Don't know programming yet? Make your first game in 5 minutes with with Blockly!
+    - Don't know programming yet? Make your first game in 5 minutes with Blockly!
     - The easiest way to make multiplayer games.
     - Desktop emulator, CLI, and lots of other development tools.
     - Friendly and safe API without direct memory manipulation.
