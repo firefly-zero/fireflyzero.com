@@ -1,24 +1,38 @@
 features:
   for_players:
-    - Lots of never-before-seen unique games.
-    - The easiest same-room multiplayer.
-    - Unique touchpad controls inspired by Steam Controller.
-    - Works and will always work without internet.
-    - >
-      You own it. No cloud subscription, no online-only games or services, no DRM.
-      The games you buy today will stay yours forever.
-    - Safe, thanks to cryptography.
+    - text: Lots of never-before-seen unique games.
+      icon: fa-solid fa-dice
+    - text: The easiest same-room multiplayer.
+      icon: fa-solid fa-users
+    - text: Unique touchpad controls inspired by Steam Controller.
+      icon: fa-solid fa-gamepad
+    - text: Works and will always work without internet.
+      icon: fa-solid fa-globe
+    - text: >
+        You own it. No cloud subscription, no online-only games or services, no DRM.
+        The games you buy today will stay yours forever.
+      icon: fa-solid fa-download
+    - text: Safe, thanks to cryptography.
+      icon: fa-solid fa-lock
   for_devs:
-    - >
-      Programmable on any language supporting WebAssembly:
-      Go, Rust, Zig, TypeScript, Python, Lua, and many more.
-    - Don't know programming yet? Make your first game in 5 minutes with Blockly!
-    - The easiest way to make multiplayer games.
-    - Desktop emulator, CLI, and lots of other development tools.
-    - Friendly and safe API without direct memory manipulation.
-    - Open source software and hardware.
-    - Touchpad, accelerometer, multi-color display.
-    - First-class support for scores, leaderboards, and achievements.
+    - text: >
+        Programmable on any language supporting WebAssembly:
+        Go, Rust, Zig, TypeScript, Python, Lua, and many more.
+      icon: fa-solid fa-code
+    - text: Don't know programming yet? Make your first game in 5 minutes with Blockly!
+      icon: fa-solid fa-flag-checkered
+    - text: The easiest way to make multiplayer games.
+      icon: fa-solid fa-egg
+    - text: Desktop emulator, CLI, and lots of other development tools.
+      icon: fa-solid fa-screwdriver-wrench
+    - text: Friendly and safe API without direct memory manipulation.
+      icon: fa-solid fa-shield
+    - text: Open source software and hardware.
+      icon: fa-brands fa-github
+    - text: Touchpad, accelerometer, multi-color display.
+      icon: fa-solid fa-gamepad
+    - text: First-class support for scores, leaderboards, and achievements.
+      icon: fa-solid fa-trophy
 
 faq:
   - q: What happens to my game if your startup fails?

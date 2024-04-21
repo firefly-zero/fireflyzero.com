@@ -9,13 +9,15 @@
     It's fun to play, alone or with friends, and easy to program.
   </p>
 
-  <hr/>
   <div class="row">
     <div class="col">
       <h2>For players</h2>
       <ul>
         {% for feature in features['for_players'] %}
-          <li>{{ feature }}</li>
+          <li>
+            <i class="{{ feature['icon'] }} fa-fw"></i>
+            {{ feature['text'] }}
+          </li>
         {% endfor %}
       </ul>
     </div>
@@ -23,13 +25,15 @@
       <h2>For developers</h2>
       <ul>
         {% for feature in features['for_devs'] %}
-          <li>{{ feature }}</li>
+          <li>
+            <i class="{{ feature['icon'] }} fa-fw"></i>
+            {{ feature['text'] }}
+          </li>
         {% endfor %}
       </ul>
     </div>
   </div>
 
-  <hr/>
   <div class="row">
     <div class="col-12">
       <h2 class="text-center">Early adoption FAQ</h2>
@@ -51,7 +55,6 @@
     {% endfor %}
   </div>
 
-  <hr/>
   <div class="row">
     <div class="col-12">
       <h2 class="text-center">Team</h2>
@@ -82,7 +85,6 @@
     </div>
   </div>
 
-  <hr/>
   <div class="row">
     <div class="col-12">
       <h2 class="text-center">Roadmap</h2>
