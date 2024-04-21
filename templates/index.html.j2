@@ -34,19 +34,21 @@
     <div class="col-12">
       <h2 class="text-center">Early adoption FAQ</h2>
     </div>
-    <div class="col-12">
-      <ul>
-        {% for point in faq %}
-          <li>
-            <p>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-2">
+    {% for point in faq %}
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">
               <i class="{{ point['icon'] }} fa-fw"></i>
               <b>{{ point['q'] }}</b>
-            </p>
+            </h5>
             {% markdown %}{{ point['a'] }}{% endmarkdown %}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 
   <hr/>

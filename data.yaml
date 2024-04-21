@@ -21,15 +21,6 @@ features:
     - First-class support for scores, leaderboards, and achievements.
 
 faq:
-  - q: How much will it cost?
-    icon: fa-solid fa-dollar-sign
-    a: >
-      It mostly depends on the production costs. It won't be expensive,
-      we're not trying to reinvent a smartphone. But it won't be as cheap
-      as countless chinese GBA clones. In any case, we'll make sure that
-      it's free considering the included games. For example, if device costs $100
-      and an average retro game costs $5, we'll make sure to provide at least 20
-      free high-quality games.
   - q: What happens to my game if your startup fails?
     icon: fa-solid fa-bomb
     a: >
@@ -48,6 +39,15 @@ faq:
       We have an emulator working, and hardware in development. We also have published
       [gamgee](https://github.com/orsinium-labs/gamgee),
       a proof of concept that runs WASM-4 games on PyBadge. It works great.
+  - q: How much will it cost?
+    icon: fa-solid fa-dollar-sign
+    a: >
+      It depends on the production costs. It won't be expensive,
+      we're not trying to reinvent a smartphone. But it won't be as cheap
+      as countless chinese GBA clones. In any case, we'll make sure that
+      it's free considering the included games. For example, if device costs $100
+      and an average retro game costs $5, we'll make sure to provide at least 20
+      free high-quality games.
   - q: When can I buy it?
     icon: fa-solid fa-calendar-days
     a: >
