@@ -38,7 +38,10 @@
       <ul>
         {% for point in faq %}
           <li>
-            <b>{{ point['q'] }}</b>
+            <p>
+              <i class="{{ point['icon'] }} fa-fw"></i>
+              <b>{{ point['q'] }}</b>
+            </p>
             {% markdown %}{{ point['a'] }}{% endmarkdown %}
           </li>
         {% endfor %}
