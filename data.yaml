@@ -19,3 +19,44 @@ features:
     - Open source software and hardware.
     - Touchpad, accelerometer, multi-color display.
     - First-class support for scores, leaderboards, and achievements.
+
+faq:
+  - q: How much will it cost?
+    a: >
+      It mostly depends on the production costs. It won't be expensive,
+      we're not trying to reinvent a smartphone. But it won't be as cheap
+      as countless chinese GBA clones. In any case, we'll make sure that
+      it's free considering the included games. For example, if device costs $100
+      and an average retro game costs $5, we'll make sure to provide at least 20
+      free high-quality games.
+  - q: What happens to my game if your startup fails?
+    a: >
+      As one of our first steps, we plan a web emulator. And we already have
+      a desktop emulator. Even if the physical device will never come to life,
+      your game will still be playable online.
+  - q: How to follow the progress?
+    a: >
+      We're researching the best ways and platforms to stay in touch with the early adopters.
+      Meanwhile, [follow me on Mastodon](https://fosstodon.org/@orsinium),
+      I'll post announcements there.
+  - q: What's the current status?
+    a: >
+      We have an emulator working, and hardware in development. We also have published
+      [gamgee](https://github.com/orsinium-labs/gamgee),
+      a proof of concept that runs WASM-4 games on PyBadge. It works great.
+  - q: When can I buy it?
+    a: >
+      We go with the flow. We focus on delivering the best product rather than
+      delivering anything but fast. We'll make sure to provide a way to donate
+      money for the cause. And when we have the prototype perfected,
+      we plan launching a kickstarter campaign to raise money for the production.
+  - q: How can I help?
+    a: >
+      The most valuable help we can get is people who'll make
+      games for the console and provide us feedback on all strugles they have.
+      We want to perfect the development tooling and experience.
+      But we need to settle some moving parts first.
+  - q: Will it be open-source?
+    a: >
+      Yes! Both software and hardware will be free and open-source.
+      Our main profit will be from selling physical units.
