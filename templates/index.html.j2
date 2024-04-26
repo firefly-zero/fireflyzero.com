@@ -1,8 +1,20 @@
 {% extends "base.html.j2" %}
 {% block body %}
-  <div class="text-center" style="margin-top: 10px">
+
+  <aside class="row" style="margin-top: 10px">
+    {% for link in links %}
+      <div class="col">
+        <a href="{{ link.link }}" target="_blank" class="btn btn-light" style="min-width: 100%">
+          <i class="{{ link.icon }}"></i>
+          {{ link.name }}
+        </a>
+      </div>
+    {% endfor %}
+  </aside>
+
+  <header class="text-center" style="margin-top: 10px">
     <img src="logo-placeholder.svg"/>
-  </div>
+  </header>
   <h1 class="text-center">Firefly Zero</h1>
   <p class="lead text-center">
     A modern handheld game console with effortless multiplayer.

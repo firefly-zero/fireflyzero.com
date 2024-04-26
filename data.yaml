@@ -1,3 +1,21 @@
+
+links:
+  - name: docs
+    icon: fa-solid fa-book
+    link: https://docs.fireflyzero.com/
+  - name: updates
+    icon: fa-brands fa-mastodon
+    link: https://fosstodon.org/@fireflyzero
+  - name: pictures
+    icon: fa-brands fa-instagram
+    link: https://gram.social/firefly
+  - name: code
+    icon: fa-brands fa-github
+    link: https://github.com/firefly-zero
+  - name: email
+    icon: fa-solid fa-envelope
+    link: mailto:firefly@orsinium.dev
+
 features:
   for_players:
     - text: Lots of never-before-seen unique games.
