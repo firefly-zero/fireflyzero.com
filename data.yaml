@@ -24,7 +24,7 @@ features:
       icon: fa-solid fa-users
     - text: Unique touchpad controls inspired by Steam Controller.
       icon: fa-solid fa-gamepad
-    - text: Works and will always work without internet.
+    - text: Works and will always work without the internet.
       icon: fa-solid fa-globe
     - text: >
         You own it. No cloud subscription, no online-only games or services, no DRM.
@@ -76,8 +76,8 @@ faq:
     a: >
       It depends on the production costs. It won't be expensive,
       we're not trying to reinvent a smartphone. But it won't be as cheap
-      as countless chinese GBA clones. In any case, we'll make sure that
-      it's free considering the included games. For example, if device costs $100
+      as countless Chinese GBA clones. In any case, we'll make sure that
+      it's free considering the included games. For example, if the device costs $100
       and an average retro game costs $5, we'll make sure to provide at least 20
       free high-quality games.
   - q: When can I buy it?
@@ -86,7 +86,7 @@ faq:
       We go with the flow. We focus on delivering the best product rather than
       delivering anything but fast. We'll make sure to provide a way to donate
       money for the cause. And when we have the prototype perfected,
-      we plan launching a kickstarter campaign to raise money for the production.
+      we plan to launch a Kickstarter campaign to raise money for the production.
   - q: How can I help?
     icon: fa-solid fa-handshake-angle
     a: >
