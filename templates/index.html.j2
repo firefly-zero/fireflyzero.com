@@ -100,16 +100,24 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="col-12">
       <h2 class="text-center">Roadmap</h2>
     </div>
-    <div class="col-12">
-      <p class="text-center">
-        We're getting things ready for alpha testing of the SDKs and development tools.
-        Stay tuned!
-      </p>
-    </div>
+    <ul class="col-12 col-md-3 list-unstyled">
+      {% for item in roadmap %}
+        <li>
+          {{ item['status'] }}
+          {% if item['link'] %}
+            <a href="{{ item['link'] }}" target="_blank">
+              {{ item['text'] }}
+            </a>
+          {% else %}
+            {{ item['text'] }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 
 {% endblock %}

@@ -99,3 +99,45 @@ faq:
     a: >
       Yes! Both software and hardware will be free and open-source.
       Our main profit will be from selling physical units.
+
+roadmap:
+  - text: Fonts
+    link: https://fonts.fireflyzero.com/
+    status: ✅
+  - text: CLI
+    link: https://github.com/firefly-zero/firefly-cli
+    status: ✅
+  - text: Graphics
+    status: ✅
+  - text: Launcher
+    status: ✅
+  - text: Emulator binaries
+    link: https://github.com/firefly-zero/firefly-emulator-bin
+    status: ⌛
+  - text: Dev docs
+    link: https://docs.fireflyzero.com/
+    status: ⌛
+  - text: Rust SDK
+    status: ⌛
+  - text: Go SDK
+    status: ⌛
+  - text: Physical prototype
+    status: ⌛
+  - text: Snake game demo
+    status: ⏸️
+  - text: Audio
+    status: ⏸️
+  - text: Tracker app demo
+    status: ⏸️
+  - text: Multiplayer
+    status: ⏸️
+  - text: Open-source runtime
+    status: ⏸️
+  - text: Zig SDK
+    status: ⏸️
+  - text: AssemblyScript SDK
+    status: ⏸️
+  - text: Python/Starlark SDK
+    status: ⏸️
+  - text: Blockly
+    status: ⏸️
