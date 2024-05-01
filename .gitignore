@@ -1,5 +1,6 @@
 /.hypothesis/
 /.*_cache/
 /.task/
+/bin/
 /public/
 /logo-placeholder.png
