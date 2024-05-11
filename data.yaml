@@ -62,15 +62,14 @@ faq:
   - q: How to follow the progress?
     icon: fa-solid fa-user-plus
     a: >
-      We're researching the best ways and platforms to stay in touch with the early adopters.
-      Meanwhile, [follow me on Mastodon](https://fosstodon.org/@orsinium),
-      I'll post announcements there.
-  - q: What's the current status?
-    icon: fa-solid fa-hourglass-start
+      Follow us on [Mastodon](https://fosstodon.org/@fireflyzero)
+      ([RSS](https://fosstodon.org/@fireflyzero.rss))
+      and [Pixelfed](https://gram.social/firefly).
+  - q: Will it be open-source?
+    icon: fa-brands fa-github
     a: >
-      We have an emulator working, and hardware in development. We also have published
-      [gamgee](https://github.com/orsinium-labs/gamgee),
-      a proof of concept that runs WASM-4 games on PyBadge. It works great.
+      Yes! Both software and hardware will be free and open-source.
+      Our main profit will be from selling physical units.
   - q: How much will it cost?
     icon: fa-solid fa-dollar-sign
     a: >
@@ -94,11 +93,6 @@ faq:
       games for the console and provide us feedback on all the difficulties they have.
       We want to perfect the development tooling and experience.
       But we need to settle some moving parts first.
-  - q: Will it be open-source?
-    icon: fa-brands fa-github
-    a: >
-      Yes! Both software and hardware will be free and open-source.
-      Our main profit will be from selling physical units.
 
 roadmap:
   - text: Fonts
@@ -108,8 +102,19 @@ roadmap:
     link: https://github.com/firefly-zero/firefly-cli
     status: ✅
   - text: Graphics
+    link: https://docs.fireflyzero.com/dev/graphics/
     status: ✅
   - text: Launcher
+    link: https://github.com/firefly-zero/firefly-launcher
+    status: ✅
+  - text: Online catalog
+    link: https://catalog.fireflyzero.com/
+    status: ✅
+  - text: Rust SDK
+    link: https://github.com/firefly-zero/firefly-rust
+    status: ✅
+  - text: Go SDK
+    link: https://github.com/firefly-zero/firefly-go
     status: ✅
   - text: Emulator binaries
     link: https://github.com/firefly-zero/firefly-emulator-bin
@@ -117,15 +122,9 @@ roadmap:
   - text: Dev docs
     link: https://docs.fireflyzero.com/
     status: ⌛
-  - text: Rust SDK
-    status: ⌛
-  - text: Go SDK
-    status: ⌛
   - text: Physical prototype
     status: ⌛
   - text: Snake game demo
-    status: ⏸️
-  - text: Online catalog
     status: ⏸️
   - text: Audio
     status: ⏸️
