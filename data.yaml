@@ -119,6 +119,9 @@ roadmap:
   - text: Go SDK
     link: https://github.com/firefly-zero/firefly-go
     status: ✅
+  - text: Snake game demo
+    link: https://github.com/firefly-zero/snek
+    status: ✅
   - text: Emulator binaries
     link: https://github.com/firefly-zero/firefly-emulator-bin
     status: ⌛
@@ -127,13 +130,11 @@ roadmap:
     status: ⌛
   - text: Physical prototype
     status: ⌛
-  - text: Snake game demo
-    status: ⏸️
+  - text: Multiplayer
+    status: ⌛
   - text: Audio
     status: ⏸️
   - text: Tracker app demo
-    status: ⏸️
-  - text: Multiplayer
     status: ⏸️
   - text: Open-source runtime
     status: ⏸️
