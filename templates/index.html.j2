@@ -1,9 +1,9 @@
 {% extends "base.html.j2" %}
 {% block body %}
 
-  <aside class="row" style="margin-top: 10px">
+  <aside class="row mt-2 justify-content-center">
     {% for link in links %}
-      <div class="col">
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-2 mb-1">
         <a href="{{ link.link }}" target="_blank" class="btn btn-light" style="min-width: 100%">
           <i class="{{ link.icon }}"></i>
           {{ link.name }}
@@ -12,7 +12,7 @@
     {% endfor %}
   </aside>
 
-  <header class="text-center" style="margin-top: 10px">
+  <header class="text-center">
     <img src="logo-placeholder.svg"/>
   </header>
   <h1 class="text-center">Firefly Zero</h1>

@@ -9,6 +9,9 @@ links:
   - name: pictures
     icon: fa-brands fa-instagram
     link: https://gram.social/firefly
+  - name: games
+    icon: fa-solid fa-download
+    link: https://catalog.fireflyzero.com/
   - name: code
     icon: fa-brands fa-github
     link: https://github.com/firefly-zero
