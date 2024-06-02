@@ -124,7 +124,7 @@ roadmap:
     status: ✅
   - text: Emulator binaries
     link: https://github.com/firefly-zero/firefly-emulator-bin
-    status: ⌛
+    status: ✅
   - text: Dev docs
     link: https://docs.fireflyzero.com/
     status: ⌛
