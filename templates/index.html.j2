@@ -113,7 +113,7 @@
     <ul class="col-12 col-md-3 list-unstyled">
       {% for item in roadmap %}
         <li>
-          {{ item['status'] }}
+          <i class="fa-solid fa-fw {{ item['status'] }}"></i>
           {% if item['link'] %}
             <a href="{{ item['link'] }}" target="_blank">
               {{ item['text'] }}

@@ -100,49 +100,59 @@ faq:
 roadmap:
   - text: Fonts
     link: https://fonts.fireflyzero.com/
-    status: ✅
+    status: fa-check
   - text: CLI
     link: https://github.com/firefly-zero/firefly-cli
-    status: ✅
+    status: fa-check
   - text: Graphics
     link: https://docs.fireflyzero.com/dev/graphics/
-    status: ✅
+    status: fa-check
   - text: Launcher
     link: https://github.com/firefly-zero/firefly-launcher
-    status: ✅
+    status: fa-check
   - text: Online catalog
     link: https://catalog.fireflyzero.com/
-    status: ✅
+    status: fa-check
   - text: Rust SDK
     link: https://github.com/firefly-zero/firefly-rust
-    status: ✅
+    status: fa-check
   - text: Go SDK
     link: https://github.com/firefly-zero/firefly-go
-    status: ✅
+    status: fa-check
   - text: Snake game demo
     link: https://github.com/firefly-zero/snek
-    status: ✅
+    status: fa-check
   - text: Emulator binaries
     link: https://github.com/firefly-zero/firefly-emulator-bin
-    status: ✅
+    status: fa-check
   - text: Dev docs
     link: https://docs.fireflyzero.com/
-    status: ⌛
+    status: fa-check
   - text: Physical prototype
-    status: ⌛
+    status: fa-hourglass-half
   - text: Multiplayer
-    status: ⌛
+    status: fa-hourglass-half
+  - text: Web emulator
+    status: fa-hourglass-half
   - text: Audio
-    status: ⏸️
+    status: fa-pause
   - text: Tracker app demo
-    status: ⏸️
+    status: fa-pause
   - text: Open-source runtime
-    status: ⏸️
+    status: fa-pause
   - text: Zig SDK
-    status: ⏸️
+    status: fa-pause
   - text: AssemblyScript SDK
-    status: ⏸️
+    status: fa-pause
   - text: Python/Starlark SDK
-    status: ⏸️
+    status: fa-pause
   - text: Blockly
-    status: ⏸️
+    status: fa-pause
+  - text: Merch shop
+    status: fa-pause
+  - text: Game jam
+    status: fa-pause
+  - text: Kickstarter campaign
+    status: fa-pause
+  - text: Production
+    status: fa-pause
