@@ -36,9 +36,7 @@ features:
     - text: Safe, thanks to cryptography.
       icon: fa-solid fa-lock
   for_devs:
-    - text: >
-        Programmable on any language supporting WebAssembly:
-        Go, Rust, Zig, TypeScript, Python, Lua, and many more.
+    - text: Programmable in Go, Rust, Zig, TypeScript, Python, Lua, and lots of other languages.
       icon: fa-solid fa-code
     - text: Don't know programming yet? Make your first game in 5 minutes with Blockly!
       icon: fa-solid fa-flag-checkered
