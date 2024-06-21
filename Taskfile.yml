@@ -19,7 +19,7 @@ tasks:
     cmds:
       - mkdir -p public
       - python3 generate.py
-      - cp favicon.ico logo-placeholder.svg public/
+      - cp assets/* public/
 
   default:
     - task: build
