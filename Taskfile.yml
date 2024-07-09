@@ -2,12 +2,24 @@
 
 version: '3'
 
+vars:
+  ART: https://raw.githubusercontent.com/firefly-zero/firefly-art/main
+
 tasks:
   install-deps:
     sources:
       - requirements.txt
     cmds:
       - python3 -m pip install -r requirements.txt
+  fetch-art:
+    cmds:
+      - wget {{.ART}}/lamp/outlined-16x16.ico -O assets/favicon.ico
+      - wget {{.ART}}/lamp/outlined-16x16.png -O assets/lamp-16x16.png
+      - wget {{.ART}}/lamp/outlined-32x32.png -O assets/lamp-32x32.png
+      - wget {{.ART}}/lamp/outlined-48x48.png -O assets/lamp-48x48.png
+      - wget {{.ART}}/lux/outlined-180x180.png -O assets/apple-touch-icon.png
+      - wget {{.ART}}/lux/outlined-192x192.png -O assets/android-chrome-192x192.png
+      - wget {{.ART}}/lux/outlined-512x512.png -O assets/android-chrome-512x512.png
   build:
     deps:
       - install-deps
