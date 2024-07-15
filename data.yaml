@@ -66,17 +66,13 @@ faq:
       As one of our first steps, we plan a web emulator. And we already have
       a desktop emulator. Even if the physical device will never come to life,
       your game will still be playable online.
-  - q: How to follow the progress?
-    icon: fa-solid fa-user-plus
-    a: >
-      Follow us on [Mastodon](https://fosstodon.org/@fireflyzero)
-      ([RSS](https://fosstodon.org/@fireflyzero.rss))
-      and [Pixelfed](https://gram.social/firefly).
   - q: Will it be open-source?
     icon: fa-brands fa-github
     a: >
       Yes! Both software and hardware will be free and open-source.
       Our main profit will be from selling physical units.
+      Check out our [Github](https://github.com/firefly-zero)
+      to see what's already available.
   - q: How much will it cost?
     icon: fa-solid fa-dollar-sign
     a: >
@@ -154,6 +150,10 @@ roadmap:
   - text: AssemblyScript SDK
     status: fa-pause
   - text: Blockly
+    status: fa-pause
+  - text: Desktop app
+    status: fa-pause
+  - text: Mobile app
     status: fa-pause
   - text: Merch shop
     status: fa-pause
