@@ -1,23 +1,29 @@
-
-links:
+menu:
   - name: docs
     icon: fa-solid fa-book
     link: https://docs.fireflyzero.com/
-  - name: updates
-    icon: fa-brands fa-mastodon
-    link: https://fosstodon.org/@fireflyzero
-  - name: pictures
-    icon: fa-brands fa-instagram
-    link: https://gram.social/firefly
   - name: games
     icon: fa-solid fa-download
     link: https://catalog.fireflyzero.com/
   - name: code
     icon: fa-brands fa-github
     link: https://github.com/firefly-zero
-  - name: email
-    icon: fa-solid fa-envelope
-    link: mailto:firefly@orsinium.dev
+social:
+  - name: Mastodon
+    icon: fa-brands fa-mastodon
+    link: https://fosstodon.org/@fireflyzero
+  - name: X (Twitter)
+    icon: fa-brands fa-twitter
+    link: https://x.com/fireflyzerocom
+  - name: RSS
+    icon: fa-solid fa-rss
+    link: https://fosstodon.org/@fireflyzero.rss
+  - name: Pixelfed
+    icon: fa-solid fa-image
+    link: https://gram.social/firefly
+  - name: Instagram
+    icon: fa-brands fa-instagram
+    link: https://www.instagram.com/fireflyzero/
 
 features:
   for_players:
@@ -126,12 +132,17 @@ roadmap:
   - text: Dev docs
     link: https://docs.fireflyzero.com/
     status: fa-check
+  - text: Multiplayer
+    status: fa-check
+    link: https://docs.fireflyzero.com/dev/net/
   - text: Physical prototype
     status: fa-hourglass-half
-  - text: Multiplayer
+  - text: Testing framework
+    status: fa-hourglass-half
+  - text: Python SDK
     status: fa-hourglass-half
   - text: Web emulator
-    status: fa-hourglass-half
+    status: fa-pause
   - text: Audio
     status: fa-pause
   - text: Tracker app demo
@@ -141,8 +152,6 @@ roadmap:
   - text: Zig SDK
     status: fa-pause
   - text: AssemblyScript SDK
-    status: fa-pause
-  - text: Python/Starlark SDK
     status: fa-pause
   - text: Blockly
     status: fa-pause

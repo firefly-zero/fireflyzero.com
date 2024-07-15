@@ -2,7 +2,7 @@
 {% block body %}
 
   <aside class="row mt-2 justify-content-center">
-    {% for link in links %}
+    {% for link in menu %}
       <div class="col col-12 col-sm-6 col-md-4 col-lg-2 mb-1">
         <a href="{{ link.link }}" target="_blank" rel="me" class="btn btn-light" style="min-width: 100%">
           <i class="{{ link.icon }}"></i>
@@ -21,7 +21,7 @@
     It's fun to play, alone or with friends, and easy to program.
   </p>
 
-  <div class="row">
+  <section class="row">
     <div class="col">
       <h2>For players</h2>
       <ul class="list-unstyled">
@@ -44,14 +44,30 @@
         {% endfor %}
       </ul>
     </div>
+  </section>
+
+  <div class="row" id="follow">
+    <div class="col-12">
+      <h2 class="text-center">Follow us</h2>
+    </div>
   </div>
+  <section class="row justify-content-center">
+    {% for link in social %}
+    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 mb-1">
+      <a href="{{ link.link }}" target="_blank" rel="me" class="btn btn-light" style="min-width: 100%">
+        <i class="{{ link.icon }}"></i>
+        {{ link.name }}
+      </a>
+    </div>
+    {% endfor %}
+  </section>
 
   <div class="row">
     <div class="col-12">
       <h2 class="text-center">Early adoption FAQ</h2>
     </div>
   </div>
-  <div class="row row-cols-1 row-cols-md-3 g-2">
+  <section class="row row-cols-1 row-cols-md-3 g-2">
     {% for point in faq %}
       <div class="col">
         <div class="card h-100">
@@ -65,9 +81,9 @@
         </div>
       </div>
     {% endfor %}
-  </div>
+  </section>
 
-  <div class="row">
+  <section class="row">
     <div class="col-12">
       <h2 class="text-center">Team</h2>
       <p class="text-center">
@@ -104,9 +120,9 @@
         </a>
       </p>
     </div>
-  </div>
+  </section>
 
-  <div class="row justify-content-center">
+  <section class="row justify-content-center">
     <div class="col-12">
       <h2 class="text-center">Roadmap</h2>
     </div>
@@ -124,6 +140,6 @@
         </li>
       {% endfor %}
     </ul>
-  </div>
+  </section>
 
 {% endblock %}
