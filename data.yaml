@@ -8,6 +8,9 @@ menu:
   - name: code
     icon: fa-brands fa-github
     link: https://github.com/firefly-zero
+  - name: blog
+    icon: fa-solid fa-bullhorn
+    link: https://blog.fireflyzero.com/
 social:
   - name: Mastodon
     icon: fa-brands fa-mastodon
