@@ -42,6 +42,8 @@ features:
         You own it. No cloud subscription, no online-only games or services, no DRM.
         The games you buy today will stay yours forever.
       icon: fa-solid fa-download
+    - text: A beautiful glowing case changing its color with the game.
+      icon: fa-solid fa-fire
     - text: Safe, thanks to cryptography.
       icon: fa-solid fa-lock
   for_devs:
