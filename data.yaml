@@ -136,6 +136,9 @@ roadmap:
   - text: Multiplayer
     status: fa-check
     link: https://docs.fireflyzero.com/dev/net/
+  - text: Audio
+    status: fa-check
+    link: https://docs.fireflyzero.com/dev/audio/
   - text: Physical prototype
     status: fa-hourglass-half
   - text: Testing framework
@@ -143,8 +146,6 @@ roadmap:
   - text: Python SDK
     status: fa-hourglass-half
   - text: Web emulator
-    status: fa-pause
-  - text: Audio
     status: fa-pause
   - text: Tracker app demo
     status: fa-pause
