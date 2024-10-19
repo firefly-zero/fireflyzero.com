@@ -1,16 +1,19 @@
 # https://taskfile.dev
 
-version: '3'
+version: "3"
 
 vars:
   ART: https://raw.githubusercontent.com/firefly-zero/firefly-art/main
 
 tasks:
   install-deps:
+    status:
+      - test -f .venv/bin/python
     sources:
       - requirements.txt
     cmds:
-      - python3 -m pip install -r requirements.txt
+      - python3 -m venv .venv
+      - .venv/bin/pip install -r requirements.txt
   fetch-art:
     cmds:
       - wget {{.ART}}/lamp/outlined-16x16.ico -O assets/favicon.ico
@@ -30,7 +33,7 @@ tasks:
       - public
     cmds:
       - mkdir -p public
-      - python3 generate.py
+      - .venv/bin/python3 generate.py
       - cp assets/* public/
 
   default:
