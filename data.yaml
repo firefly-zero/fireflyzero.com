@@ -16,7 +16,7 @@ social:
     icon: fa-brands fa-mastodon
     link: https://fosstodon.org/@fireflyzero
   - name: X (Twitter)
-    icon: fa-brands fa-twitter
+    icon: fa-brands fa-x-twitter
     link: https://x.com/fireflyzerocom
   - name: RSS
     icon: fa-solid fa-rss
@@ -27,6 +27,9 @@ social:
   - name: Instagram
     icon: fa-brands fa-instagram
     link: https://www.instagram.com/fireflyzero/
+  - name: Discord
+    icon: fa-brands fa-discord
+    link: https://discord.gg/4vCdNHAw
 
 features:
   for_players:
