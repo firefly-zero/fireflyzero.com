@@ -18,6 +18,9 @@ social:
   - name: X (Twitter)
     icon: fa-brands fa-x-twitter
     link: https://x.com/fireflyzerocom
+  - name: Bluesky
+    icon: fa-brands fa-bluesky
+    link: https://bsky.app/profile/fireflyzero.bsky.social
   - name: RSS
     icon: fa-solid fa-rss
     link: https://fosstodon.org/@fireflyzero.rss
@@ -30,6 +33,9 @@ social:
   - name: Discord
     icon: fa-brands fa-discord
     link: https://discord.gg/fx4Wmn6DwD
+  - name: Loops
+    icon: fa-solid fa-infinity
+    link: https://loops.video/@fireflyzero
 
 features:
   for_players:
