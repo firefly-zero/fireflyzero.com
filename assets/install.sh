@@ -40,7 +40,8 @@ fi
 # TODO(@orsinium): curl might be not installed, fallback to wget.
 echo "Fetching latest release number..."
 resp="$(curl https://api.github.com/repos/firefly-zero/firefly-cli/releases/latest)"
-version="$(echo $resp | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')"
+version="$(echo $resp | grep -oE '"tag_name":\s*"[0-9]+.[0-9]+.[0-9]+"')"
+version="$(echo $version | grep -oE '[0-9]+.[0-9]+.[0-9]+')"
 
 # Download archive
 echo "Downloading latest release..."
@@ -60,4 +61,5 @@ tar -xzf "${archive_path}" -C "${tmp_dir}"
 out_dir="."
 
 # Move binary to the selected path.
-mv "${tmp_dir}/*/firefly_cli" "${out_dir}/"
+matches=(${tmp_dir}/*/firefly_cli)
+mv "${matches[0]}" "${out_dir}/"
