@@ -37,9 +37,13 @@ fi
 
 
 # Get the latest release version.
-# TODO(@orsinium): curl might be not installed, fallback to wget.
 echo "Fetching latest release number..."
-resp="$(curl https://api.github.com/repos/firefly-zero/firefly-cli/releases/latest)"
+url="https://api.github.com/repos/firefly-zero/firefly-cli/releases/latest"
+if which curl; then
+  resp="$(curl ${url})"
+else
+  resp="$(wget -O- ${url})"
+fi
 version="$(echo $resp | grep -oE '"tag_name":\s*"[0-9]+.[0-9]+.[0-9]+"')"
 version="$(echo $version | grep -oE '[0-9]+.[0-9]+.[0-9]+')"
 
@@ -51,15 +55,20 @@ url="https://github.com/firefly-zero/firefly-cli/releases/download/${version}/${
 tmp_dir="$(mktemp -d)"
 archive_path="${tmp_dir}/${archive_name}"
 echo $url
-curl -L "${url}" -o "${archive_path}"
+if which curl; then
+  curl -L "${url}" -o "${archive_path}"
+else
+  wget -O "${archive_path}" "${url}"
+fi
 
 # Extract archive
 echo "Extracting archive..."
 tar -xzf "${archive_path}" -C "${tmp_dir}"
 
-# TODO: find writable PATH.
-out_dir="."
-
-# Move binary to the selected path.
+# Execute post-installation script and let it do the rest.
 matches=(${tmp_dir}/*/firefly_cli)
-mv "${matches[0]}" "${out_dir}/"
+"${matches[0]}" postinstall
+
+# Verify installation
+bash -c "ff --version"
+echo "🎉 ff is installed and works!"
