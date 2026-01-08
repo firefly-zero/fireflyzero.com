@@ -6,7 +6,7 @@ set -o errexit   # abort on nonzero exit code
 set -o nounset   # abort on unbound variable
 set -o pipefail  # don't hide errors within pipes
 
-if test $1; then
+if test "$1"; then
   true
 else
   echo "an app ID is required"
@@ -17,7 +17,11 @@ fi
 if which firefly_cli; then
   true
 else
-  bash -c "$(curl https://fireflyzero.com/install.sh)"
+  if which curl; then
+    bash -c "$(curl https://fireflyzero.com/install.sh)"
+  else
+    bash -c "$(wget -O- https://fireflyzero.com/install.sh)"
+  fi
 fi
 
 firefly_cli import $1
