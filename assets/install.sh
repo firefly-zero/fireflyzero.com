@@ -40,13 +40,13 @@ fi
 
 # Get the latest release version.
 echo "Fetching latest release number..."
-url="https://api.github.com/repos/firefly-zero/firefly-cli/releases/latest"
+url="https://github.com/firefly-zero/firefly-cli/releases/latest"
 if which curl; then
-  resp="$(curl ${url})"
+  resp="$(curl -I ${url})"
 else
-  resp="$(wget -O- ${url})"
+  resp="$(wget -qSO /dev/null ${url} 2>&1)"
 fi
-version="$(echo $resp | grep -oE '"tag_name":\s*"[0-9]+.[0-9]+.[0-9]+"')"
+version="$(echo $resp | grep -iPo '[Ll]ocation: \S*')"
 version="$(echo $version | grep -oE '[0-9]+.[0-9]+.[0-9]+')"
 
 # Download archive
@@ -56,11 +56,10 @@ echo "downloading ${archive_name}..."
 url="https://github.com/firefly-zero/firefly-cli/releases/download/${version}/${archive_name}"
 tmp_dir="$(mktemp -d)"
 archive_path="${tmp_dir}/${archive_name}"
-echo $url
 if which curl; then
   curl -L "${url}" -o "${archive_path}"
 else
-  wget -O "${archive_path}" "${url}"
+  wget -qO "${archive_path}" "${url}"
 fi
 
 # Extract archive
