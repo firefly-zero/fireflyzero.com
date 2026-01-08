@@ -22,6 +22,8 @@ if [ "$os" = "Linux" ]; then
 elif [ "$os" = "Darwin" ]; then
   if [ "$arch" == "aarch64" ]; then
     suffix="-aarch64-apple-darwin.tar.gz"
+  elif [[ "$arch" =~ ^arm ]]; then
+    suffix="-aarch64-apple-darwin.tar.gz"
   else
     echo "Unsupported Apple architecture: $arch"
     exit 1
