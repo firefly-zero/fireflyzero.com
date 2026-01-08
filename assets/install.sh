@@ -13,6 +13,8 @@ if [ "$os" = "Linux" ]; then
     suffix="-x86_64-unknown-linux-musl.tar.gz"
   elif [ "$arch" == "i386" ] || [ "$arch" == "i686" ]; then
     suffix="-i686-unknown-linux-musl.tar.gz"
+  elif [ "$arch" == "aarch64" ]; then
+    suffix="aarch64-unknown-linux-musl.tar.gz"
   elif [[ "$arch" =~ ^arm ]]; then
     suffix="-arm-unknown-linux-musleabihf.tar.gz"
   else
@@ -24,6 +26,8 @@ elif [ "$os" = "Darwin" ]; then
     suffix="-aarch64-apple-darwin.tar.gz"
   elif [[ "$arch" =~ ^arm ]]; then
     suffix="-aarch64-apple-darwin.tar.gz"
+  elif [ "$arch" == "x86_64" ]; then
+    suffix="-x86_64-apple-darwin.tar.gz"
   else
     echo "Unsupported Apple architecture: $arch"
     exit 1
