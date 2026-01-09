@@ -59,8 +59,7 @@ echo "Extracting archive..."
 tar -xzf "${archive_path}" -C "${tmp_dir}"
 
 # Execute post-installation script and let it do the rest.
-matches=(${tmp_dir}/firefly_cli)
-"${matches[0]}" postinstall
+"${tmp_dir}/firefly_cli" postinstall
 
 # Verify installation
 bash -c "ff --version"
