@@ -41,23 +41,11 @@ else
   exit 1
 fi
 
-
-# Get the latest release version.
-echo "Fetching latest release number..."
-url="https://github.com/firefly-zero/firefly-cli/releases/latest"
-if which curl; then
-  resp="$(curl -I ${url})"
-else
-  resp="$(wget -qSO /dev/null ${url} 2>&1)"
-fi
-version="$(echo $resp | grep -io 'ocation: \S*')"
-version="$(echo $version | grep -oE '[0-9]+.[0-9]+.[0-9]+')"
-
 # Download archive
 echo "Downloading latest release..."
-archive_name="firefly_cli-v${version}${suffix}"
+archive_name="firefly_cli${suffix}"
 echo "downloading ${archive_name}..."
-url="https://github.com/firefly-zero/firefly-cli/releases/download/${version}/${archive_name}"
+url="https://github.com/firefly-zero/firefly-cli/releases/latest/download/${archive_name}"
 tmp_dir="$(mktemp -d)"
 archive_path="${tmp_dir}/${archive_name}"
 if which curl; then
@@ -71,7 +59,7 @@ echo "Extracting archive..."
 tar -xzf "${archive_path}" -C "${tmp_dir}"
 
 # Execute post-installation script and let it do the rest.
-matches=(${tmp_dir}/*/firefly_cli)
+matches=(${tmp_dir}/firefly_cli)
 "${matches[0]}" postinstall
 
 # Verify installation
