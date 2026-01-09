@@ -50,7 +50,7 @@ if which curl; then
 else
   resp="$(wget -qSO /dev/null ${url} 2>&1)"
 fi
-version="$(echo $resp | grep -iPo '[Ll]ocation: \S*')"
+version="$(echo $resp | grep -io 'ocation: \S*')"
 version="$(echo $version | grep -oE '[0-9]+.[0-9]+.[0-9]+')"
 
 # Download archive

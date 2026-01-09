@@ -24,5 +24,7 @@ else
   fi
 fi
 
-firefly_cli import $1
-firefly_cli emulator -- --id $1
+# We need to call firefly_cli in a subshell
+# in case the install script patched $PATH through .zshrc.
+bash -c "firefly_cli import $1"
+bash -c "firefly_cli emulator -- --id $1"
