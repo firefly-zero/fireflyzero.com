@@ -149,30 +149,24 @@ roadmap:
     status: fa-check
     link: https://docs.fireflyzero.com/dev/audio/
   - text: Physical prototype
-    status: fa-hourglass-half
+    status: fa-check
   - text: Testing framework
-    status: fa-hourglass-half
-  - text: Python SDK
-    status: fa-hourglass-half
-  - text: Web emulator
-    status: fa-pause
-  - text: Tracker app demo
-    status: fa-pause
+    status: fa-check
   - text: Open-source runtime
-    status: fa-pause
+    status: fa-check
   - text: Zig SDK
-    status: fa-pause
+    status: fa-check
   - text: AssemblyScript SDK
-    status: fa-pause
-  - text: Blockly
-    status: fa-pause
+    status: fa-check
+  - text: Game jam
+    status: fa-check
+  - text: Audio support on the device
+    status: fa-hourglass-half
+  - text: Online shop for merch, games, and device
+    status: fa-hourglass-half
   - text: Desktop app
     status: fa-pause
   - text: Mobile app
-    status: fa-pause
-  - text: Merch shop
-    status: fa-pause
-  - text: Game jam
     status: fa-pause
   - text: Kickstarter campaign
     status: fa-pause
