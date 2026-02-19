@@ -61,6 +61,12 @@ tar -xzf "${archive_path}" -C "${tmp_dir}"
 # Execute post-installation script and let it do the rest.
 "${tmp_dir}/firefly_cli" postinstall
 
+# Install system dependencies
+bash -c "ff import sys.launcher"
+bash -c "ff import sys.connector"
+bash -c "ff import sys.remover"
+bash -c "ff import sys.settings"
+
 # Verify installation
 bash -c "ff --version"
 echo "🎉 ff is installed and works!"
