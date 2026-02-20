@@ -59,7 +59,7 @@ echo "Extracting archive..."
 tar -xzf "${archive_path}" -C "${tmp_dir}"
 
 # Execute post-installation script and let it do the rest.
-"${tmp_dir}/firefly_cli" postinstall
+"${tmp_dir}/firefly_cli" postinstall $@
 
 # Install system dependencies
 bash -c "ff import sys.launcher"
