@@ -63,9 +63,15 @@ tar -xzf "${archive_path}" -C "${tmp_dir}"
 
 # Install system dependencies
 bash -c "ff import sys.launcher"
+bash -c "ff import sys.input-test"
 bash -c "ff import sys.connector"
-bash -c "ff import sys.remover"
+bash -c "ff import sys.shots"
 bash -c "ff import sys.settings"
+bash -c "ff import sys.remover"
+bash -c "ff import sys.manuals"
+bash -c "ff import sys.installer"
+bash -c "ff import sys.boards"
+bash -c "ff import sys.badges"
 
 # Verify installation
 bash -c "ff --version"
