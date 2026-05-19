@@ -4,7 +4,7 @@
   <aside class="row mt-2 justify-content-center">
     {% for link in menu %}
       <div class="col col-12 col-sm-6 col-md-4 col-lg-2 mb-1">
-        <a href="{{ link.link }}" target="_blank" rel="me" class="btn btn-light" style="min-width: 100%">
+        <a href="{{ link.link }}" target="_blank" class="btn btn-primary" style="min-width: 100%">
           <i class="{{ link.icon }}"></i>
           {{ link.name }}
         </a>
@@ -12,164 +12,26 @@
     {% endfor %}
   </aside>
 
-  <header class="text-center">
-    <img src="lux-outlined.png" class="logo"/>
+  <header class="row section mt-4" style="background-color: #38b764;">
+    <div class="alert col-6">
+      <p class="lead" style="margin-bottom: 0px">
+        This is
+      </p>
+      <h1>Firefly Zero</h1>
+      <p class="lead">
+        A modern handheld game console with effortless multiplayer.
+      </p>
+    </div>
   </header>
-  <h1 class="text-center">Firefly Zero</h1>
-  <p class="lead text-center">
-    A modern handheld game console with effortless multiplayer.
-    It's fun to play, alone or with friends, and easy to program.
-  </p>
 
-  <section class="row">
-    <div class="col">
-      <h2>For players</h2>
-      <ul class="list-unstyled">
-        {% for feature in features['for_players'] %}
-          <li>
-            <i class="{{ feature['icon'] }} fa-fw"></i>
-            {{ feature['text'] }}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="col">
-      <h2>For developers</h2>
-      <ul class="list-unstyled">
-        {% for feature in features['for_devs'] %}
-          <li>
-            <i class="{{ feature['icon'] }} fa-fw"></i>
-            {{ feature['text'] }}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-
-  <div class="row justify-content-center" id="subscribe">
-    <div class="col-12">
-      <h2 class="text-center">Keep me posted!</h2>
-    </div>
-    <div class="col-12">
-      <p class="text-center lead">
-        Tell us your email using the form below, and we'll send you only 3-5 emails ever:
-        <br/>
-        when the gamedev SDK is 100% complete, when we launch a Kickstarter campaign, 
-        and when you can buy the device.
-      </p>
-    </div>
-    <form 
-      class="col-md-6 mb-3 justify-content-center"
-      action="https://submit-form.com/lK1cnaFkB"
-      data-botpoison-public-key="pk_032fb23e-a184-404d-ada0-4122b8ae5a70"
-    >
-        <div class="input-group">
-          <input type="email" name="email" placeholder="email" required class="form-control" />
-          <button type="submit" class="btn">send</button>
-    </form>
-  </div>
-
-
-  <div class="row" id="follow">
-    <div class="col-12">
-      <h2 class="text-center">Follow us</h2>
-    </div>
-  </div>
-  <section class="row justify-content-center">
-    {% for link in social %}
-    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 mb-1">
-      <a href="{{ link.link }}" target="_blank" rel="me" class="btn btn-light" style="min-width: 100%">
-        <i class="{{ link.icon }}"></i>
-        {{ link.name }}
-      </a>
-    </div>
-    {% endfor %}
-  </section>
-
-  <div class="row">
-    <div class="col-12">
-      <h2 class="text-center">Early adoption FAQ</h2>
-    </div>
-  </div>
-  <section class="row row-cols-1 row-cols-md-3 g-2">
-    {% for point in faq %}
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="{{ point['icon'] }} fa-fw"></i>
-              <b>{{ point['q'] }}</b>
-            </h5>
-            {% markdown %}{{ point['a'] }}{% endmarkdown %}
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </section>
-
-  <section class="row">
-    <div class="col-12">
-      <h2 class="text-center">Team</h2>
-      <p class="text-center">
-        We are geeks making gamedev fun and easy.
-      </p>
-    </div>
-    <div class="col-6">
-      <h2 class="text-center">Gram</h2>
-      <p class="text-center">
-        <i class="fa-solid fa-code"></i>
-        Software
-      </p>
-      <p class="text-center">
-        <a href="https://github.com/orsinium" target="_blank" type="button" class="btn btn-light">
-          <i class="fa-brands fa-github"></i>
-          github
-        </a>
-        <a href="https://fosstodon.org/@orsinium" target="_blank" type="button" class="btn btn-light">
-          <i class="fa-brands fa-mastodon"></i>
-          mastodon
-        </a>
-        <a href="mailto:firefly@orsinium.dev" type="button" class="btn btn-light">
-          <i class="fa-solid fa-envelope"></i>
-          email
-        </a>
-      </p>
-    </div>
-    <div class="col-6">
-      <h2 class="text-center">Alex</h2>
-      <p class="text-center">
-        <i class="fa-solid fa-microchip"></i>
-        Hardware
-      </p>
-      <p class="text-center">
-        <a href="https://github.com/kopchik/" target="_blank" type="button" class="btn btn-light">
-          <i class="fa-brands fa-github"></i>
-          github
-        </a>
-      </p>
-    </div>
-  </section>
-
-  <section class="row justify-content-center">
-    <div class="col-md-6">
-      <img src="manga-white.webp" style="max-width: 100%" />
-    </div>
-    <div class="col-md-6">
-      <h2>Roadmap</h2>
-      <ul class="list-unstyled">
-        {% for item in roadmap %}
-          <li>
-            <i class="fa-solid fa-fw {{ item['status'] }}"></i>
-            {% if item['link'] %}
-              <a href="{{ item['link'] }}" target="_blank">
-                {{ item['text'] }}
-              </a>
-            {% else %}
-              {{ item['text'] }}
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+  <section class="row justify-content-end section" style="background-color: #3b5dc9;">
+    <div class="alert col-6">
+      <h2>Same-room multiplayer</h1>
+      <ol class="lead">
+        <li>Get up to 8 devices</li>
+        <li>Press a button</li>
+        <li>Play together with friends!</li>
+      </ol>
     </div>
   </section>
 
