@@ -1,10 +1,10 @@
 {% extends "base.html.j2" %}
 {% block body %}
 
-  <aside class="row mt-2 justify-content-center">
+  <aside class="row mt-3 mb-3 justify-content-center">
     {% for link in menu %}
       <div class="col col-12 col-sm-6 col-md-4 col-lg-2 mb-1">
-        <a href="{{ link.link }}" target="_blank" class="btn btn-primary" style="min-width: 100%">
+        <a href="{{ link.link }}" target="_blank" class="btn btn-primary" style="min-width: 100%; transform: rotate(2deg)">
           <i class="{{ link.icon }}"></i>
           {{ link.name }}
         </a>
@@ -12,26 +12,34 @@
     {% endfor %}
   </aside>
 
-  <header class="row section mt-4" style="background-color: #38b764;">
-    <div class="alert col-6">
-      <p class="lead" style="margin-bottom: 0px">
-        This is
-      </p>
-      <h1>Firefly Zero</h1>
-      <p class="lead">
-        A modern handheld game console with effortless multiplayer.
-      </p>
+  <header class="row section section1">
+    <div class="col-6">
+      <div class="alert mt-5" style="transform: rotate(-4deg)">
+        <p class="lead" style="margin-bottom: 0px">
+          This is
+        </p>
+        <h1 style="color: #b13e53;">Firefly Zero<span class="text-muted">*</span></h1>
+        <p class="lead">
+          A modern handheld game console with effortless multiplayer.
+        </p>
+        <p class="text-muted">
+          *All the photos are of the first prototype.
+          The final device will be even cooler!
+        </p>
+      </div>
     </div>
   </header>
 
-  <section class="row justify-content-end section" style="background-color: #3b5dc9;">
-    <div class="alert col-6">
-      <h2>Same-room multiplayer</h1>
-      <ol class="lead">
-        <li>Get up to 8 devices</li>
-        <li>Press a button</li>
-        <li>Play together with friends!</li>
-      </ol>
+  <section class="row justify-content-end section section2">
+    <div class="col-6">
+      <div class="alert mt-5" style="transform: rotate(4deg)">
+        <h2>Same-room multiplayer</h1>
+        <ol class="lead">
+          <li>Get up to 8 devices</li>
+          <li>Press a few buttons</li>
+          <li>Play together with friends!</li>
+        </ol>
+      </div>
     </div>
   </section>
 
