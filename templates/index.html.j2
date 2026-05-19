@@ -34,11 +34,11 @@
     <div class="col-6">
       <div class="alert mt-5" style="transform: rotate(4deg)">
         <h2>Same-room multiplayer</h1>
-        <ol class="lead">
-          <li>Get up to 8 devices</li>
-          <li>Press a few buttons</li>
-          <li>Play together with friends!</li>
-        </ol>
+        <ul class="lead">
+          <li>Connect up to 8 devices!</li>
+          <li>Wireless</li>
+          <li>No internet connection needed</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -113,6 +113,93 @@
           </a>
         </p>
       </div>
+    </div>
+  </section>
+
+  <section class="row justify-content-center section" style="background-color: #a7f070">
+    <div class="col-6">
+      <div class="alert mt-5" style="transform: rotate(-4deg)">
+        <h2>Sounds fun?</h1>
+        <p class="lead" style="color: #b13e53">
+          <b>You'll be able to get Firefly Zero in 2027.</b>
+        </p>
+        <p class="lead">
+          Leave your email and we'll text you when Kickstarter is live.
+        </p>
+        <form
+          class="col-md-6 mb-3 justify-content-center"
+          action="https://submit-form.com/lK1cnaFkB"
+          data-botpoison-public-key="pk_032fb23e-a184-404d-ada0-4122b8ae5a70"
+        >
+            <div class="input-group">
+              <input type="email" name="email" placeholder="email" required class="form-control" />
+              <button type="submit" class="btn btn-primary">send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="row justify-content-around section section8">
+    <div class="col-4">
+      <div class="alert mt-5" style="transform: rotate(-4deg)">
+        <h2 class="text-center">Team</h2>
+        <p class="text-center lead">
+          Two geeks making a fun project.
+        </p>
+      </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-3">
+      <div class="alert mt-5" style="transform: rotate(-4deg)">
+        <h2 class="text-center">Gram</h2>
+        <p class="text-center">
+          <i class="fa-solid fa-code"></i>
+          Software
+        </p>
+        <p class="text-center">
+          <a href="https://github.com/orsinium" target="_blank" type="button" class="btn btn-primary">
+            <i class="fa-brands fa-github"></i>
+            github
+          </a>
+          <a href="https://fosstodon.org/@orsinium" target="_blank" type="button" class="btn btn-primary">
+            <i class="fa-brands fa-mastodon"></i>
+            mastodon
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="alert mt-5" style="transform: rotate(4deg)">
+        <h2 class="text-center">Alex</h2>
+        <p class="text-center">
+          <i class="fa-solid fa-microchip"></i>
+          Hardware
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="row justify-content-around section" style="background-color: #3b5dc9;">
+    <div class="col-4">
+      <div class="alert mt-5" style="transform: rotate(-4deg)">
+        <h2 class="text-center">Follow us</h2>
+      </div>
+    </div>
+    <div class="row col-12 mb-4" style="transform: rotate(-4deg)">
+    {% for link in social %}
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 mb-1" style="transform: rotate(8deg)">
+        <a href="{{ link.link }}" target="_blank" rel="me" class="btn btn-primary" style="min-width: 100%">
+          <i class="{{ link.icon }}"></i>
+          {{ link.name }}
+        </a>
+      </div>
+    {% endfor %}
+      </div>
+  </section>
+
+  <section class="row justify-content-center">
+    <div class="col-md-6">
+      <img src="manga-white.webp" style="max-width: 100%" />
     </div>
   </section>
 
