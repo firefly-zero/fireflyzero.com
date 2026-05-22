@@ -1,17 +1,6 @@
 {% extends "base.html.j2" %}
 {% block body %}
 
-  <aside class="row mt-3 mb-3 justify-content-center">
-    {% for link in menu %}
-      <div class="col col-12 col-sm-6 col-md-4 col-lg-2 mb-1">
-        <a href="{{ link.link }}" target="_blank" class="btn btn-primary" style="min-width: 100%; transform: rotate(2deg)">
-          <i class="{{ link.icon }}"></i>
-          {{ link.name }}
-        </a>
-      </div>
-    {% endfor %}
-  </aside>
-
   <header class="row section section1">
     <div class="col-12 col-md-6">
       <div class="alert mt-5" style="transform: rotate(-4deg)">
@@ -28,11 +17,22 @@
         </p>
         <p class="lead">
           <a href="#kickstarter" class="btn btn-primary">
+            <i class="fa-solid fa-shopping-cart"></i>
             buy?
           </a>
         </p>
       </div>
     </div>
+    <aside class="row mt-3 mb-3 justify-content-center">
+      {% for link in menu %}
+        <div class="col col-12 col-sm-6 col-md-4 col-lg-2 mb-1">
+          <a href="{{ link.link }}" target="_blank" class="btn btn-primary" style="min-width: 100%; transform: rotate(2deg)">
+            <i class="{{ link.icon }}"></i>
+            {{ link.name }}
+          </a>
+        </div>
+      {% endfor %}
+    </aside>
   </header>
 
   <section class="row justify-content-end section section2">
@@ -72,6 +72,7 @@
         </p>
         <p class="lead">
           <a href="https://catalog.fireflyzero.com/" class="btn btn-primary" target="_blank">
+            <i class="fa-solid fa-download"></i>
             game catalog
           </a>
         </p>
@@ -116,6 +117,7 @@
         </ul>
         <p class="lead">
           <a href="https://docs.fireflyzero.com/dev/" class="btn btn-primary" target="_blank">
+            <i class="fa-solid fa-book"></i>
             developer guide
           </a>
         </p>
@@ -204,10 +206,10 @@
       </div>
   </section>
 
-  <section class="row justify-content-center">
+  <footer class="row justify-content-center">
     <div class="col-md-6">
       <img src="manga-white.webp" style="max-width: 100%" />
     </div>
-  </section>
+  </footer>
 
 {% endblock %}
