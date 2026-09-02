@@ -33,6 +33,9 @@ social:
   - name: Instagram
     icon: fa-brands fa-instagram
     link: https://www.instagram.com/fireflyzero/
+  - name: Threads
+    icon: fa-brands fa-threads
+    link: https://www.threads.com/@fireflyzero
   - name: Discord
     icon: fa-brands fa-discord
     link: https://discord.gg/KXeU3dXHAA?p=np#firefly
