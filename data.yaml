@@ -42,3 +42,16 @@ social:
   - name: Loops
     icon: fa-solid fa-infinity
     link: https://loops.video/@fireflyzero
+banners:
+  - slug: construction
+    title: under construction
+    link: https://github.com/firefly-zero/
+  - slug: fediverse
+    title: join the fediverse
+    link: https://fosstodon.org/@fireflyzero
+  - slug: no-ai
+    title: created by a human with a heart
+    link: https://docs.fireflyzero.com/internal/ai/
+  - slug: pg
+    title: PG rating
+    link: https://www.mabsland.com/Adoption.html

@@ -216,4 +216,12 @@
     </div>
   </footer>
 
+  <section id="banners" class="justify-content-center" style="display: flex">
+    {% for banner in banners %}
+      <a href="{{ banner.link }}" target="_blank" class="m-1">
+        <img src="88x31-{{ banner.slug }}.png" title="{{ banner.title }}"/>
+      </a>
+    {% endfor %}
+  </section>
+
 {% endblock %}
