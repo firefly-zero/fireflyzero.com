@@ -72,6 +72,7 @@ bash -c "ff import sys.manuals"
 bash -c "ff import sys.installer"
 bash -c "ff import sys.boards"
 bash -c "ff import sys.badges"
+bash -c "ff import sys.logs"
 
 # Verify installation
 bash -c "ff --version"
