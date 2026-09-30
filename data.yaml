@@ -18,30 +18,35 @@ social:
   - name: Mastodon
     icon: fa-brands fa-mastodon
     link: https://fosstodon.org/@fireflyzero
-  - name: X (Twitter)
-    icon: fa-brands fa-x-twitter
-    link: https://x.com/fireflyzerocom
+    color: "615ef8"
   - name: Bluesky
     icon: fa-brands fa-bluesky
     link: https://bsky.app/profile/fireflyzero.bsky.social
+    color: "0560ff"
   - name: RSS
     icon: fa-solid fa-rss
     link: https://fosstodon.org/@fireflyzero.rss
+    color: "f26522"
   - name: Pixelfed
     icon: fa-solid fa-image
     link: https://gram.social/firefly
+    color: "d946ef"
   - name: Instagram
     icon: fa-brands fa-instagram
     link: https://www.instagram.com/fireflyzero/
+    color: "c13584"
   - name: Threads
     icon: fa-brands fa-threads
     link: https://www.threads.com/@fireflyzero
+    color: "000000"
   - name: Discord
     icon: fa-brands fa-discord
     link: https://discord.gg/KXeU3dXHAA?p=np#firefly
+    color: "5865f2"
   - name: Loops
     icon: fa-solid fa-infinity
     link: https://loops.video/@fireflyzero
+    color: "000000"
 banners:
   - slug: construction
     title: under construction
